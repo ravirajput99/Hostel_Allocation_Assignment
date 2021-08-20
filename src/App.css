@@ -1,0 +1,179 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* {
+  font-family: "Poppins", Helvetica, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+}
+.fixed img {
+  width: 35px;
+  height: 35px;
+  margin-right: 20px;
+}
+hr {
+  position: fixed;
+  top: 80px;
+}
+.maindiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.googlebtn {
+  margin-bottom: 10px;
+  color: rgb(110, 99, 99);
+  width: 200px;
+  height: 35px;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  box-shadow: 0px 1px 2px;
+  padding: 7px;
+}
+.facebookbtn {
+  width: 200px;
+  height: 32px;
+  background-color: #3b5998;
+  color: #fff;
+  border-radius: 2px;
+  border: none;
+  box-shadow: 1px 0px 2px;
+  padding: 7px;
+}
+.facebookbtn,
+.googlebtn:hover {
+  cursor: pointer;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-left: 5px;
+  margin-top: -2px;
+}
+.red {
+  color: red;
+}
+.welcomediv {
+  width: 700px;
+  border: 1px solid black;
+  margin: auto;
+  padding: 20px 100px 100px 100px;
+  border-radius: 20px;
+}
+.welcomediv h1 {
+  text-align: center;
+}
+.newUserDiv {
+  padding: 20px;
+  display: inline-block;
+  /* background-color: red; */
+  text-align: center;
+}
+.upperDiv {
+  /* background-color: blue; */
+  display: inline-block;
+}
+.girlBoyImg {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.femaleDiv {
+  display: inline-block;
+  margin-right: 100px;
+  margin-left: 20px;
+  width: 350px;
+  height: 200px;
+  background-color: rgb(248, 183, 228);
+  border-radius: 20px;
+  /* padding-top: 10px; */
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+.maleDiv {
+  display: inline-block;
+  width: 350px;
+  height: 200px;
+  background-color: rgb(170, 220, 253);
+  border-radius: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+/* ///////////////Choose hostel/////////////////////////// */
+.hostelDiv {
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.hostelDiv div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: grey;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.hostelDiv h1 {
+  margin-left: 30px;
+}
+/* /////////////////////Floor div/////////////// */
+.floorDiv {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+}
+.floorDiv select {
+  width: 100px;
+  margin-left: 38%;
+}
+
+.floorDiv h3 {
+  text-align: center;
+}
+/* //////////////////////////Room div ///////////////// */
+.roomsDiv {
+  margin: 10px;
+  width: 400px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.roomsDiv div {
+  background-color: #a5d6a7;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  width: 70px;
+  height: 70px;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.roomsDiv .white {
+  background-color: #fff;
+  cursor: inherit;
+}
