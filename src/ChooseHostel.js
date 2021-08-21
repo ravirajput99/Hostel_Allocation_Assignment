@@ -1,15 +1,15 @@
 import React from "react";
-
+import history from "./history";
 function ChooseHostel() {
   return (
     <div className="hostelDiv">
       <h1>Choose a Hostel</h1>
-      <div>B1</div>
-      <div>B2</div>
-      <div>B3</div>
-      <div>B4</div>
-      <div>B5</div>
-      <div>B6</div>
+      <div onClick={() => history.push("/rooms")}>B1</div>
+      <div onClick={() => history.push("/rooms")}>B2</div>
+      <div onClick={() => history.push("/rooms")}>B3</div>
+      <div onClick={() => history.push("/rooms")}>B4</div>
+      <div onClick={() => history.push("/rooms")}>B5</div>
+      <div onClick={() => history.push("/rooms")}>B6</div>
     </div>
   );
 }

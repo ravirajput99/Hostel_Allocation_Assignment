@@ -3,9 +3,10 @@ import googlelogo from "./images/google.png";
 import facebooklogo from "./images/facebook.png";
 import { googleProvider } from "./config/authMethods";
 import socailMediaAuth from "./services/auth";
-function handleOnClick(provider) {
-  const res = socailMediaAuth(provider);
-}
+import history from "./history";
+// function handleOnClick(provider) {
+//   const res = socailMediaAuth(provider);
+// }
 function Login() {
   return (
     <div className="maindiv">
@@ -14,18 +15,15 @@ function Login() {
       <button
         className="googlebtn"
         onClick={() => {
-          handleOnClick(googleProvider);
+          // handleOnClick(googleProvider);
+          history.push("/newuser");
         }}
       >
         <img src={googlelogo} className="icon" />
         Sign in with Google
       </button>
-      <button className="facebookbtn">
-        <img
-          src={facebooklogo}
-          className="icon"
-          // onClick={handleOnClick(facebookProvider)}
-        />
+      <button className="facebookbtn" onClick={() => history.push("/welcome")}>
+        <img src={facebooklogo} className="icon" />
         Sign in with Facebook
       </button>
     </div>
